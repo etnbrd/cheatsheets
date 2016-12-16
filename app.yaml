@@ -1,0 +1,23 @@
+runtime: go
+api_version: go1
+default_expiration: "10m"
+
+handlers:
+  - url: /
+    static_files: public/index.html
+    upload: public/index.html
+  # - url: /(.*)
+  #   static_files: public/\1
+  #   upload: public/(.*)
+  - url: /(.*\.(.*))$ # Serve all files statically
+    static_files: public/\1
+    upload: public/.*\.(.*)$
+  - url: /.* # Serve all requests with the handler
+    script: _go_app
+
+skip_files:
+ - ^node_modules$
+ - ^content$
+ - ^source$
+ - ^vendors$
+ - ^.git$

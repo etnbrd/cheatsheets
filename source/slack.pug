@@ -1,0 +1,147 @@
+---
+title: Slack
+---
+extends /source/layouts/index.pug
+
+block content
+  table.shortcuts-table
+    tbody.group
+      tr
+        th
+        th.group-title Navigation
+      tr.shortcut
+        td.keystroke <span>⌘</span> + <span>+</span>
+        td.description Increase font size
+      tr.shortcut
+        td.keystroke <span>⌘</span> + <span>-</span>
+        td.description Decrease font size
+      tr.shortcut
+        td.keystroke <span>Fn</span> + <span>↑</span> or <span>Page Up</span>
+        td.description Scroll up
+      tr.shortcut
+        td.keystroke <span>Fn</span> + <span>↓</span> or <span>Page Down</span>
+        td.description Scroll down
+      tr.shortcut
+        td.keystroke <span>⌘</span> + <span>K</span>
+        td.description Quick Switcher
+      tr.shortcut
+        td.keystroke <span>⌘</span> + <span>Shift</span> + <span>K</span>
+        td.description Direct messages menu
+      tr.shortcut
+        td.keystroke <span>Alt</span> + <span>↑</span>
+        td.description Previous channel or DM
+      tr.shortcut
+        td.keystroke <span>Alt</span> + <span>↓</span>
+        td.description Next channel or DM
+      tr.shortcut
+        td.keystroke <span>Alt</span> + <span>Shift</span> + <span>↑</span>
+        td.description Previous unread channel or DM
+      tr.shortcut
+        td.keystroke <span>Alt</span> + <span>Shift</span> + <span>↓</span>
+        td.description Next unread channel or DM
+      tr.shortcut
+        td.keystroke <span>Alt</span> + <span>←</span>
+        td.description Previous channel or DM visited
+      tr.shortcut
+        td.keystroke <span>Alt</span> + <span>→</span>
+        td.description Next channel or DM visited
+      tr.shortcut
+        td.keystroke <span>⌘</span> + <span>.</span>
+        td.description Open or close right pane
+      tr.shortcut
+        td.keystroke <span>⌘</span> + <span>Shift</span> + <span>I</span>
+        td.description Channel info pane
+      tr.shortcut
+        td.keystroke <span>⌘</span> + <span>Shift</span> + <span>M</span>
+        td.description Recent Mentions
+      tr.shortcut
+        td.keystroke <span>⌘</span> + <span>Shift</span> + <span>E</span>
+        td.description Directory
+      tr.shortcut
+        td.keystroke <span>⌘</span> + <span>Shift</span> + <span>S</span>
+        td.description Starred Items
+      tr.shortcut
+        td.keystroke <span>⌘</span> + <span>F</span>
+        td.description Search the current channel or conversation
+    tbody.group
+      tr
+        th
+        th.group-title All Unreads navigation
+      tr.shortcut
+        td.keystroke <span>⌘</span> + <span>Shift</span> + <span>A</span>
+        td.description Open All Unreads view
+      tr.shortcut
+        td.keystroke <span>Alt</span> + click
+        td.description Mark messages as unread
+      tr.shortcut
+        td.keystroke <span>→</span>
+        td.description Next channel
+      tr.shortcut
+        td.keystroke <span>←</span>
+        td.description Previous channel
+      tr.shortcut
+        td.keystroke <span>R</span>
+        td.description Toggle current channel read or unread
+
+    tbody.group
+      tr
+        th
+        th.group-title Mark messages read or unread
+      tr.shortcut
+        td.keystroke <span>Esc</span>
+        td.description Mark all messages in current channel or DM as read
+      tr.shortcut
+        td.keystroke <span>Shift</span> + <span>Esc</span>
+        td.description Mark all messages as read
+      tr.shortcut
+        td.keystroke <span>Alt</span> + click
+        td.description Set a message as your oldest unread message
+    tbody.group
+      tr
+        th
+        th.group-title Message shortcuts
+      tr.shortcut
+        td.keystroke <span>↑</span>
+        td.description Edit your last message
+      tr.shortcut
+        td.keystroke <span>Tab</span>
+        td.description Reprint your last slash command
+      tr.shortcut
+        td.keystroke <span>Shift</span> + <span>↑</span>
+        td.description Select text to beginning of current line
+      tr.shortcut
+        td.keystroke <span>Shift</span> + <span>↓</span>
+        td.description Select text to end of current line
+      tr.shortcut
+        td.keystroke <span>Shift</span> + <span>Enter</span>
+        td.description Create a new line in your message
+    tbody.group
+      tr
+        th
+        th.group-title Message autocomplete
+      tr.shortcut
+        td.keystroke <span>@[character]</span> + <span>Tab</span>
+        td.description Autocomplete @username beginning with [character]
+      tr.shortcut
+        td.keystroke <span>#[character]</span> + <span>Tab</span>
+        td.description Autocomplete channel beginning with [character]
+      tr.shortcut
+        td.keystroke <span>:[character]</span> + <span>Tab</span>
+        td.description Autocomplete emoji beginning with [character]
+    tbody.group
+      tr
+        th
+        th.group-title Files & snippets
+      tr.shortcut
+        td.keystroke <span>⌘</span> + <span>U</span>
+        td.description Upload a file
+      tr.shortcut
+        td.keystroke <span>⌘</span> + <span>Enter</span>
+        td.description Create a new Snippet
+    tbody.group
+      tr
+        th
+        th.group-title Help
+      tr.shortcut
+        td.keystroke <span>⌘</span> + <span>/</span>
+        td.description Open list of keyboard shortcuts

@@ -1,0 +1,129 @@
+$border: #e0e0e0;
+$background: #ffffff;
+$color: #212121;
+
+$ksColor: #757575;
+$ksBackground: #eeeeee;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Raleway';
+    font-size: 81.25%;
+}
+
+body {
+    background: $background;
+    color: $color;
+}
+
+.container {
+    color: $color;
+    font-size: 1.05em;
+}
+
+.header {
+    font-family: "Bebas Neue";
+    border-bottom: 1px solid $border;
+    font-size: 1.4em;
+    padding: 20px 24px
+}
+
+.content {
+    padding-bottom: 32px;
+}
+
+.shortcuts-table {
+    margin: 0 24px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 0;
+}
+
+.group {
+  width: 500px;
+  padding-right: 2em;
+  border-left: 1px solid $border;
+  padding-left: 2em;
+}
+
+.group-title {
+    font-family: "Bebas Neue";
+    padding-top: 32px;
+    font-weight: bold;
+    text-align: left
+}
+
+.keystroke,
+.description {
+    padding-top: .5em;
+    vertical-align: baseline;
+}
+
+.shortcut {
+    line-height: 1.3em
+}
+
+.keystroke {
+    padding-right: 1em;
+    text-align: right;
+    white-space: nowrap;
+
+    span {
+      display: inline-block;
+      padding: .3em .5em;
+      border-radius: 2px;
+      color: $ksColor;
+      background: $ksBackground;
+      text-align: center;
+      min-width: 2em;
+
+      & + span {
+        margin-left: .2em;
+      }
+    }
+}
+
+
+.description {
+    /*max-width: 300px*/
+}
+
+.separator {
+    height: 1em
+}
+
+@media print {
+  body,
+  .container,
+  .content,
+  table.shortcuts-table {
+    page-break-inside:auto;
+    display: block;
+  }
+  tbody.group {
+    width: 50%;
+    border: none;
+    vertical-align: top;
+    display: block;
+    float: left;
+    page-break-inside: avoid;
+  }
+
+  .keystroke span {
+    border: 1px solid $ksColor;
+  }
+  @page {
+    margin: .1em 5em;
+  }
+}
