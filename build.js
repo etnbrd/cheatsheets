@@ -17,7 +17,7 @@ var metadata = require('./metadata');
 var ms = metalsmith(__dirname)
   .metadata(metadata)
   .source('./source')
-  .destination('./public');
+  .destination('./docs');
 
 ms.use(filenames())
   .use(sass())
